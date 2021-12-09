@@ -1,3 +1,9 @@
 module BoardsController
-  # Build something great
+  using Genie.Renderer.Html 
+
+
+  function index()
+    html(:boards, :index)
+  end
+
 end
