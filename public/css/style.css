@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 2rem
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#chessBoard span{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#chessBoard div:nth-child(odd) span:nth-child(even),
+#chessBoard div:nth-child(even) span:nth-child(odd){
+    background-color: purple;
+}
+
+
+#chessBoard div:nth-child(even) span:nth-child(even),
+#chessBoard div:nth-child(odd) span:nth-child(odd){
+    background-color: pink;
+}
