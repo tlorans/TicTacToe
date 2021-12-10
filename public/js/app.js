@@ -39,12 +39,16 @@ const chessBoard = (() => {
 
 // Factory for players
 const Player = (camp) => {    
-
+    let squares = document.querySelectorAll("span")
+    const getCamp = () => camp;
     const move = () => {
-        let squares = document.querySelectorAll("span")
         for (let item of squares){
             item.addEventListener("click", () => {
-                item.innerText = "X";
+                if (getCamp() === "cross"){
+                    item.innerText = "X";
+                } else {
+                    item.innerText = "O";
+                }
             })
         };
     };
