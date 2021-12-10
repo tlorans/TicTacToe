@@ -21,6 +21,12 @@ body {
     height: 100px;
 }
 
+#chessBoard {
+    border: black solid 2px
+
+}
+
+
 #chessBoard div:nth-child(odd) span:nth-child(even),
 #chessBoard div:nth-child(even) span:nth-child(odd){
     background-color: purple;
@@ -40,4 +46,9 @@ body {
 button {
     width: 50px;
     height: 50px;
+}
+
+span {
+    display: flex;
+
 }

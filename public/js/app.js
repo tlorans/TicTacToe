@@ -38,11 +38,24 @@ const chessBoard = (() => {
 })()
 
 // Factory for players
-const Player = (camp) => {
+const Player = (camp) => {    
 
+    const move = () => {
+        let squares = document.querySelectorAll("span")
+        for (let item of squares){
+            item.addEventListener("click", () => {
+                item.innerText = "X";
+            })
+        };
+    };
 
+    return {
+        move
+    };
+};
 
-}
+const newPlayer = Player("cross");
+newPlayer.move();
 
 
 
