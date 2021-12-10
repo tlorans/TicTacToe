@@ -7,6 +7,12 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    gap: 30px
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
 }
 
 #chessBoard span{
@@ -24,4 +30,14 @@ body {
 #chessBoard div:nth-child(even) span:nth-child(even),
 #chessBoard div:nth-child(odd) span:nth-child(odd){
     background-color: pink;
+}
+
+#displaycontroller {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 50px;
+    height: 50px;
 }

@@ -1,5 +1,6 @@
 using Genie.Router
 using BoardsController
+using Genie.Renderer.Js
 
 
 # route("/") do
@@ -7,3 +8,5 @@ using BoardsController
 # end
 
 route("/", BoardsController.index)
+
+# up(8000; open_browser = true)
